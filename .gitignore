@@ -29,4 +29,4 @@ Thumbs.db
 .ipynb_checkpoints
 
 # Any other data or output files you don't want to track
-# Add patterns for these files here
+# Add patterns for these files here"data.pickle" 
