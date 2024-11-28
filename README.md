@@ -18,7 +18,7 @@ A real-time hand gesture recognition system that detects and classifies American
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/ASL-Recognition-Project.git
+git clone https://github.com/RuturajKhondre/ASL-Recognition-Project.git
 
 cd ASL-Recognition-Project
 
