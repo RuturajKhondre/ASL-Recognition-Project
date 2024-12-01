@@ -7,8 +7,28 @@ import numpy as np
 # Load the data
 data_dict = pickle.load(open('./data.pickle', 'rb'))
 
-data = np.asarray(data_dict['data'])
-labels = np.asarray(data_dict['labels'])
+# Get the raw data
+raw_data = data_dict['data']
+labels = data_dict['labels']
+
+# Check data consistency
+expected_length = 42  # 21 landmarks * 2 (x,y coordinates)
+valid_data = []
+valid_labels = []
+
+print(f"Total samples before filtering: {len(raw_data)}")
+
+# Filter out inconsistent data points
+for i, data_point in enumerate(raw_data):
+    if len(data_point) == expected_length:
+        valid_data.append(data_point)
+        valid_labels.append(labels[i])
+
+print(f"Total samples after filtering: {len(valid_data)}")
+
+# Convert to numpy arrays
+data = np.array(valid_data)
+labels = np.array(valid_labels)
 
 # Create labels dictionary
 unique_labels = np.unique(labels)

@@ -1,32 +1,16 @@
-# Python cache files
+# Python
 __pycache__/
 *.py[cod]
-
-# Virtual environments (if you're using one)
+*$py.class
 venv/
-env/
 
-# IDE specific files (adjust as needed)
-.vscode/
-.idea/
-
-# Model file (you might want to track this, remove if you want to include it in version control)
+# Project specific
+data/
+*.pickle
 model.p
+*.jpg
+*.png
 
-# Temporary files
-*.tmp
-*.bak
-*.swp
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Jupyter Notebook (if you're using it for development)
-.ipynb_checkpoints
-
-# Any other data or output files you don't want to track
-# Add patterns for these files here"data.pickle" 
+# IDE
+.idea/
+.vscode/

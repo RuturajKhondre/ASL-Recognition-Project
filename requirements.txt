@@ -4,3 +4,4 @@ opencv-python==4.8.1.78
 matplotlib==3.7.1
 pyttsx3==2.90
 scikit-learn==1.2.2
+import pyttsx3
